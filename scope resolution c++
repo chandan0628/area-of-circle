@@ -1,0 +1,33 @@
+scope resolution
+#include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+ int m=10;
+ int main()
+ {
+      int m=20;
+      {
+
+    int k=m;
+    int m=30;
+
+    cout<<"we are in inner block \n";
+
+    cout<<"m"<<m<<"\n";
+
+    cout<<"k"<<k<<"\n";
+
+    cout<<"::M"<<::m<<"\n";
+    }
+
+    cout<<"we are in outer block \n";
+
+    cout<<"m"<<m<<"\n";
+
+    cout<<"::m"<<::m<<"\n";
+
+    getch();
+   return 0;
+   }
+
+
